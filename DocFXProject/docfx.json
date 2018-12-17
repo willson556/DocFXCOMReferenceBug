@@ -1,0 +1,47 @@
+﻿{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "TopLevelApp/TopLevelApp.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ],
+          "src": ".."
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures":  true
+    }
+  ],
+  "build": {
+    "disableGitFeatures": true,
+    "content": [
+      {
+        "files": [
+          "api/**.yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/images/**",
+          "files/**"
+         ]
+      }
+    ],
+    "template": [
+      "default",
+      "template"
+    ],
+    "dest": "wwwroot",
+    "globalMetadata": {
+      "_appTitle": "Repro Project",
+      "_appFooter": "Copyright © 2018"
+    },
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ]
+  }
+}

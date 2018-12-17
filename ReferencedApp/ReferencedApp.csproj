@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="MSBuild.Sdk.Extras/1.6.65">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <Platforms>AnyCPU</Platforms>
+    <OutputType>winexe</OutputType>
+    <DebugType>Full</DebugType>
+    <OutputTypeEx>winexe</OutputTypeEx>
+    <RootNamespace>ReferencedApp</RootNamespace>
+    <AssemblyName>ReferencedApp</AssemblyName>
+    <ExtrasEmbeddedResourceGeneratedCodeIsPublic>false</ExtrasEmbeddedResourceGeneratedCodeIsPublic>
+    <ExtrasEnableWpfProjectSetup>true</ExtrasEnableWpfProjectSetup>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+</Project>
