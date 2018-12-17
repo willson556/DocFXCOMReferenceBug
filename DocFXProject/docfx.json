@@ -32,8 +32,7 @@
       }
     ],
     "template": [
-      "default",
-      "template"
+      "default"
     ],
     "dest": "wwwroot",
     "globalMetadata": {
